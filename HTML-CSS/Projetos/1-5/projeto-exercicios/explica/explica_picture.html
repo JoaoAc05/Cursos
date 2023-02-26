@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/html.ico" type="image/x-icon">
+    <title>Imagem Adaptada</title>
+</head>
+<body>
+    <h1>Imagem que se Adapta</h1>
+    <hr>
+    <p><strong>Para esta tarefa foi criado uma pagina pois não se trata apenas de uma tag, e sim de um grupo de comandos e sources!</strong>
+    </p>
+    <br> <sup>¹</sup> Iniciailmente você precisa de imagens de tamanhos diferentes,
+    <br>que seram abertas de acordo com a largura da janela do seu navegador.
+    <p>
+        <sup>²</sup> Depois você ira definir a tag &lt;picture&gt;
+        <br>colocar a imagem que quer com o &lt;img&gt;
+        <br> <strong>OBS: Da imagem maior para a menor!</strong>
+    </p>
+    <p>
+        <sup>³</sup> Em cima do &lt;img&gt;, defina o source:media:type
+        <br> Defina o (max-width: tamanho da imagem grande + 50 px) srcset='caminho da imagem media' type='image/ tipo de imagem'
+    </p>
+    <br> <sup>4</sup> Em cima novamente defina o mesmo comando, alterando definições da imagem grande
+    <br>para média e da imagem média para pequena!
+    <pre>
+        <mark style="background-color: rgba(75, 159, 255, 0.308)">Seu código ficará semelhante a isso</mark>
+        <code>
+        &lt;picture&gt;
+            &lt;source media="(max-width: 750px)" srcset="../../ex011/imagens/foto-p.png" type="image/png"&gt;
+            &lt;source media="(max-width: 1050px)" srcset="../../ex011/imagens/foto-m.png" type="image/png"&gt;
+            &lt;img src="../../ex011/imagens/foto-g.png" alt="Adaptação"&gt;            
+        &lt;/picture&gt;</code>
+        <br>
+        Repare que a imagem grande foi importada com o img, estando na parte de baixo do código
+        E as sources sobrepondo colocando a adaptação para as imagens 
+    </pre>
+    <hr>
+    Voltar para os <a href="../index.html" target="_self" rel="prev">Exercícios</a>
+    <br>Voltar para os <a href="../codigos.html" target="_self" rel="prev">Códigos</a>
+    <hr>
+    <picture>
+        <source media="(max-width: 750px)" srcset="../../ex011/imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="../../ex011/imagens/foto-m.png" type="image/png">
+        <img src="../../ex011/imagens/foto-g.png" alt="Adaptação">
+    </picture>
+</body>
+</html>

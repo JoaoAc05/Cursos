@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/html.ico" type="image/x-icon">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Como Funciona o Audio</h1>
+    <hr>
+    <p><strong>Para esta tarefa foi criado uma pagina pois não se trata apenas de uma tag, e sim de um grupo de comandos e parametros!</strong>
+    </p>
+    <br>
+    <h3>Reproduzindo Audio</h3>
+    <p>Vamos aprender a reproduzir um audio em HTML5</p>
+    <audio src="../../ex011/midia/timeless.mp3" controls></audio>
+    <pre>
+        Utiliza-se a Tag audio, definindo o local do audio e alguns parametros
+        &lt;audio src="midia/timeless.mp3" controls&gt;&lt;/audio&gt;
+    </pre>
+    <p>Forma 2</p>
+    <audio preload="metadata" controls>
+        <source src="../../ex011/midia/on_the_island.mp3" type="audio/mpeg">
+        <source src="../../ex011/midia/timeless.mp3" type="audio/mpeg">
+        <p>Seu navegador não tem compatibilidade com audio. <br><a href="../../ex011/midia/timeless.mp3">Clique aqui para fazer o Dowload do audio</a>
+        </p>
+    </audio>
+    <pre>
+        Utiliza-se a Tag audio, defina os parametros, e abra um source:src        
+        Para definir as possibilidades e locais dos audios <br>       
+        &lt;audio preload="metadata" controls&gt;
+            &lt;source src="midia/on_the_island.mp3" type="audio/mpeg"&gt;
+            &lt;source src="midia/timeless.mp3" type="audio/mpeg"&gt;
+            &lt;p&gt;Seu navegador não tem compatibilidade com audios. &lt;br&gt;&lt;a href="midia/timeless.mp3"&gt;Clique aqui para fazer o Dowload do audio&lt;/a&gt;&lt;/p&gt;
+        &lt;/audio&gt;
+    <p>Esta forma é usada para caso 1 audio não funcione o navegador ira abrir o segundo, <br>e caso também não funcione ira mostrar a mensagem e o link!</p>
+    </pre>
+    <h2>Parametros</h2>
+    <pre>
+        &lt;audio controls&gt;
+        Utiliza para mostrar uma controladora do audio 
+        <br>
+        &lt;audio loop&gt;
+        Utiliza para definir um loop no audio
+        <br>
+        &lt;audio preload="metadata"&gt;
+        Utiliza para o navegador apenas fazer o dowload do audio no momento em que ele for iniciado
+        <br>
+        &lt;audio preload="auto"&gt;
+        O navegador só termina de carregar quando o audio inteiro ja estiver carregado
+        <br>
+        &lt;audio preload="auto" autoplay&gt;
+        O navegador só terminara de carregar quando o audio inteiro ja estiver carregado
+        E iniciará rodando o audio 
+        <br>
+        <strong>Obs</strong>: Podendo colocar varios parametros juntos
+        ─────────────────────────────────────────────────────────────────
+        <strong>Types</strong>: mp3 -> type="audio/mpeg"
+               ogg -> type="audio/ogg"
+    </pre>
+    <hr>
+    Voltar para <a href="../index.html" target="_self" rel="prev">Exercícios</a>
+    <br>
+    Voltar para <a href="../codigos.html" target="_self" rel="prev">Códigos</a>
+</body>
+</html>

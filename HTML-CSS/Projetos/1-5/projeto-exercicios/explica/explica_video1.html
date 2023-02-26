@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon/html.ico" type="image/x-icon">
+    <title>Hospedagem Interna</title>
+</head>
+<body>
+    <h1>Como Colocar Vídeos</h1>
+    <hr>
+    <p><strong>Para esta tarefa foi criado uma pagina pois não se trata apenas de uma tag, e sim de um grupo de comandos e parametros!</strong>
+    <br>O código é muito semelhante a aplicação de audio
+    <br>Mudando apenas a Tag e alguns parametros 
+    </p>
+    <video src="../../ex012/midia/meu_video.webm" controls></video>
+    <pre>
+    Tendo como sua forma simples e sem adaptação para compatibilidade
+
+    &lt;video src="../../ex012/midia/meu_video.webm" controls&gt;&lt;/video&gt;
+
+    com apenas uma extensão sendo exibida!
+    </pre>
+    <hr>
+    <br> Por questões de maior compatibilidade e design podemos fazer 
+    <video width="400" controls poster="../../ex012/imagem/tumb.png" autoplay>
+        <source src="../../ex012/midia/meu_video.webm" type="video/webm">
+        <source src="../../ex012/midia/meu_video.mkv" type="video/mkv">
+        <source src="../../ex012/midia/meu_video.mp4" type="video/mp4">
+        <source src="../../ex012/midia/meu_video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com a apresentação de vídeo</p>
+    </video>
+    <pre>
+        <code>
+        &lt;video width="400" controls poster="../../ex012/imagem/tumb.png"&gt;
+            &lt;source src="../../ex012/midia/meu_video.webm" type="video/webm"&gt;
+            &lt;source src="../../ex012/midia/meu_video.mkv" type="video/mkv"&gt;
+            &lt;source src="../../ex012/midia/meu_video.mp4" type="video/mp4"&gt;
+            &lt;source src="../../ex012/midia/meu_video.ogv" type="video/ogg"&gt;
+            &lt;p&gt;Seu navegador não tem compatibilidade com a apresentação de vídeo&lt;/p&gt;
+        &lt;/video&gt;   
+        </code>
+<hr>
+    <h2>Parametros</h2>
+    <ol type="I">
+        <li>width</li>
+Utilizado para determinar o tamanho que ira aparecer o vídeo   
+        <li>controls</li>
+Utilizado para poder iniciar e pausar o vídeo
+        <li>poster</li>
+Utilizado para definir uma imagem inicial do video
+        <li>source</li>
+utilizado para caso o navegador não tenha compatibilidade com a extensão do vídeo
+ele ira abrir a próxima extensão e caso não tenha compatibilidade também 
+ira escrever o texto de aviso
+        <li>loop</li>
+define um loop no video quando ele acabar
+    </ol> 
+    </pre>
+    <hr>
+    Voltar aos <a href="../index.html" target="_self" rel="prev">Exercícios</a>
+    <br>
+    Voltar aos <a href="../codigos.html" target="_self" rel="prev">Códigos</a>
+</body>
+</html>
