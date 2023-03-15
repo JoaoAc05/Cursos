@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/html.ico" type="image/x-icon">
+    <title>Mídias de HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>tente abrir esse site em dispositivos diferentes ou apenas diminua e almente o tamanho do  seu navegador.</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="Foto G">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir um audio em HTML5</p>
+    <audio src="midia/timeless.mp3" controls></audio>
+    <pre>
+        &lt;audio src="midia/timeless.mp3" controls&gt;&lt;/audio&gt;
+    </pre>
+    <p>Forma 2</p>
+    <audio preload="metadata" controls>
+        <source src="midia/on_the_island.mp3" type="audio/mpeg">
+        <source src="midia/timeless.mp3" type="audio/mpeg">
+        <p>Seu navegador não tem compatibilidade com audio. <br><a href="midia/timeless.mp3">Clique aqui para fazer o Dowload do audio</a>
+        </p>
+    </audio>
+    <pre>
+        &lt;audio preload="metadata" controls&gt;
+            &lt;source src="midia/on_the_island.mp3" type="audio/mpeg"&gt;
+            &lt;source src="midia/timeless.mp3" type="audio/mpeg"&gt;
+            &lt;p&gt;Seu navegador não tem compatibilidade com audios. &lt;br&gt;&lt;a href="midia/timeless.mp3"&gt;Clique aqui para fazer o Dowload do audio&lt;/a&gt;&lt;/p&gt;
+        &lt;/audio&gt;
+    <p>Esta forma é usada para caso 1 audio não funcione o navegador ira abrir o segundo, <br>e caso também não funcione ira mostrar a mensagem e o link!</p>
+    </pre>
+    <h2>Parametros</h2>
+    <pre>
+        &lt;audio controls&gt;
+        Utiliza para mostrar uma controladora do audio 
+        <br>
+        &lt;audio loop&gt;
+        Utiliza para definir um loop no audio
+        <br>
+        &lt;audio preload="metadata"&gt;
+        Utiliza para o navegador apenas fazer o dowload do audio no momento em que ele for iniciado 
+    </pre>
+    
+</body>
+</html>
