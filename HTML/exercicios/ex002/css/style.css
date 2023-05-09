@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Pacifico & display=swap');
+@font-face {
+    font-family: 'FonteLogo';
+    src: url("../fonts/bubblegum-sans-regular.otf");
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e9e9e9;
+    color: #000000be;   
+}
+/*Inicio Tela Central*/
+div#interface {
+    width: 950px;
+    padding: 10px;
+    margin-top: -20px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    /**/
+    background-color: white;
+    box-shadow: 2px 2px 5px #0000001a;
+}
+/*Fim Tela Central*/
+header img#poster {
+    position: absolute;
+    left: 1275px;
+    top: 60px;
+}
+header#cabecalho {
+    height: 150px;
+    /**/
+    border-bottom: 2px solid #e9e9e9 ;
+    background: url(../imagens/glass-logo-peq.jpg) no-repeat 0px 100px;
+}
+header#cabecalho h1 {
+    margin-bottom: 0px;
+    padding: 0px;
+    /**/
+    font-family: FonteLogo, sans-serif;
+    font-size: 30px;
+    color: #777777;
+    text-shadow: 1px 1px 2px #00000060;
+}
+header#cabecalho h2 {
+    margin-top: 0px;
+    padding: 0px;
+    /**/
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+    color: #919191;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+a {
+    color: #606060;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+figure.img_legenda {
+    position: relative;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.img_legenda img {
+    width: 100%;
+    height: 100%;
+}
+
+figure.img_legenda figcaption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+    /**/
+    box-sizing: border-box;
+    /**/
+    opacity: 0;
+    transition: opacity 1s;
+    /**/
+    background-color: #0000005b;
+    color: white;
+}
+figure.img_legenda figcaption:hover {
+    opacity: 1;
+}
+
+/*Menu*/
+nav#menu {
+    display: block;
+}
+nav#menu ul {
+    position: absolute;  
+    top: -15px;
+    left: 40%;
+    /**/
+    list-style: none;
+    text-transform: uppercase;
+}
+nav#menu li {
+    margin: 2px;
+    padding: 10px;
+    display: inline-block;
+    /**/
+    background-color: #c4c4c4;
+    transition: 0.7s;
+}
+nav#menu li:hover {
+    background-color: #606060;
+}
+nav#menu h1 {
+    display: none;
+}
+nav#menu a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav#menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+/*Fim Menu*/
+
+/*Lado Esquerdo*/
+section#corpo {
+    width: 500px;
+    padding-right: 10px;
+    display: block;
+    float: left;
+    /**/
+    border-right: 2px solid #e9e9e9;
+}
+
+article#noticia-principal h2 {
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    /**/
+    font-size: 1.7em;
+    color: #606060;
+    background-color: #dddddd;
+}
+header#cabecalho-artigo h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /**/
+    font-family: FonteLogo, sans-serif;
+    font-size: 2em;
+    color: #606060;
+}
+header#cabecalho-artigo h2{
+    margin-top: 0px;
+    /**/
+    font-size: 1.5em;
+    color: #777777;
+    background-color: transparent;
+}
+header#cabecalho-artigo h3{
+    margin-top: 0px;
+
+    font-size: 1.1em;
+    color: #606060;
+}
+header#cabecalho-artigo h3.direita {
+    text-align: right;
+    font-size: 1em;
+    color: #919191;
+}
+
+video#super-human {
+    width: 500px;
+}
+
+/*Lado Direito*/
+aside#lateral {
+    width: 400px;
+    display: block;
+    float: right;
+    margin-top: 10px;
+    padding: 15px;
+    /**/
+    background-color: #e9e9e9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #00000056;
+}
+aside#lateral h1 {
+    margin-top: 0px;
+    /**/
+    font-family: FonteLogo, sans-serif;
+    font-size: 2em;
+    color: #606060;
+}
+aside#lateral h2 {
+    padding: 5px;
+    /**/
+    background-color: #606060;
+    font-size: 1.5em;
+    color: white;
+
+}
+
+/*Tabela*/
+table#espec {
+    margin-left: auto;
+    margin-right: auto;
+    /**/
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+table#espec td {
+    padding: 5px;
+    /**/
+    border: 1px solid black;
+}
+table#espec td.titulotd{
+    text-align: right;
+    font-weight: bold;
+    color: white;
+    background-color: #606060;
+}
+table#espec td.elementotd {
+    text-align: left;
+}
+table#espec caption {
+    color: #777777;
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+table#espec caption span {
+    display: block;
+    float: right;
+    margin-top: 8px;
+    /**/
+    color: black;
+    font-size: 10pt;
+    
+}
+
+/*Footer*/
+footer#rodape {
+    clear: both; /*Comentar*/
+    padding: 10px;
+    /**/
+    border-top: 2px solid #e9e9e9;
+}
+footer#rodape p {
+    text-align: center;
+}
+/*Fim Footer*/

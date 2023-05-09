@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Contato</title>
+</head>
+    <script src="js/funcoes.js"></script>
+    <script>
+        function calc() {
+            let qtd = parseInt(document.getElementById("idqtd").value);
+            tot = qtd * 1300
+            document.getElementById("idtot").value = tot;
+        }
+    </script>
+<body>
+    <div id="interface">
+    <header id="cabecalho">
+        <hgroup>
+            <h1>Google Glass</h1>
+            <h2>A Revolução do Google Glass Está Chegando</h2>
+        </hgroup>
+        <figure>
+            <img id="poster" src="imagens/glass-oculos-preto-peq.png" alt="óculos Google">
+        </figure>
+
+        <!--Menu-->
+        <nav id="menu">
+            <h1>Menu principal</h1>
+            <ul>
+                <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="index.html">Home</a></li>
+                <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="spesc.html">Especificações</a></li>
+                <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+                <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="multimidia.html">Multimidia</a></li>
+                <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/contato.png')"><a href="fale_conosco.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="corpo2">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                <h2>por João Alves</h2>
+                <h3 class="direita">Atualizado em 09/04/2023</h3>
+            </hgroup>
+    
+    
+            <form method="post" id="fcontato" action="mailto:testespython97@gmail.com"  oninput="calc()">
+                <fieldset id="usuario">
+                    <legend>Identificação do Usuário</legend>
+                        <p><label for="idnome">Nome:</label>
+                             <input type="text" name="unome" id="idnome" size="30" maxlength="30" placeholder="Nome Completo"> 
+                        </p>
+                        <p><label for="idsenha">Senha:</label> 
+                            <input type="password" name="usenha" id="idsenha" size="10" maxlength="9" minlength="8" placeholder="Senha 8 digitos"> 
+                        </p>
+                        <p><label for="idemail">E-mail:</label> 
+                            <input type="email" name="uemail" id="idemail" size="25" maxlength="30" placeholder="email"> 
+                        </p>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                                <input type="radio" name="usexo" id="umasc" checked> <label for="umasc">Masculino</label> 
+                                <br>
+                                <input type="radio" name="usexo" id="ufem"> <label for="ufem">Feminino</label>  
+                        </fieldset>
+                        <p>Data de Nascimento: <input type="date" name="unasci" id="idnas"> </p>
+                </fieldset>
+                
+                <fieldset id="endereco">
+                    <legend>Endereço do Usuário</legend>
+                        <p>Logradouro: <input type="text" name="ulogr" id="ulogr" size="15" maxlength="80" placeholder="Rua, Avenida, ..."> </p>
+                        <p>Número: <input type="number" name="unum" id="idnum" min="0" max="99999" > </p>
+                        <p><label for="idestado">Estado:</label> 
+                            <select name="uestado" id="idestado">
+                                <optgroup label="Sudeste">
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="ES">Espírito Santo</option>
+                                </optgroup>
+                                <optgroup label="Sul">
+                                    <option value="PR">Paraná</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                </optgroup>
+                                <optgroup label="Centro-Oeste">
+                                    <option value="MS">Mato-Grosso do Sul</option>
+                                    <option value="MT">Mato-Grosso</option>
+                                    <option value="GO">Goiás</option>
+                                </optgroup>
+                                <optgroup label="Norte">
+                                    <option value="RO">Rondônia</option>
+                                    <option value="Ac">Acre</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="TO">Tocantins</option>
+                                </optgroup>
+                                <optgroup label="Nordeste">
+                                    <option value="MA">Maranhão</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceara</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="SE">Sergipe</option>
+                                </optgroup>
+                            </select> 
+                        </p>
+                        <p>Cidade:  <input type="text" name="ucid" id="idcid" size="30" max="40" placeholder="Cidade" list="cidade"> </p>
+                        <datalist id="cidade">
+                            <option value="Rio de Janeiro"></option>
+                            <option value="Nova Iguaçu"></option>
+                            <option value="Niteroi"></option>
+                            <option value="Belford Roxo"></option>
+                        </datalist>
+                </fieldset>
+                
+                <fieldset id="mensagem">
+                    <legend>Mensagem do Usuário</legend>
+                        <p><label for="uurg" id="idurg">Grau de Urgência:</label>
+                        0<input type="range" id="idurg" min="0" max="10" step="1" >10</p>
+                        <p><label for="umsg" id="idmsg">Mensagem:</label> 
+                            <br>
+                            <textarea name="msg" id="idmsg" cols="50" rows="10" placeholder="Escreva Sua Mensagem."></textarea></p>
+                </fieldset>
+                
+                <fieldset id="pedido">
+                    <legend>Quero um Google Glass</legend>
+                        <p><input type="checkbox" name="uped" id="idped">
+                            <label for="glasscomp">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                        <p> <input type="color" name="ucolor" id="idcolor">
+                            <label for="glasscor">Cor:</label></p>
+                        <p><label for="glassquant">Quantidade:</label> 
+                            <input type="number" name="uqtd" id="idqtd" min="0" max="5" value="0"></p>
+                        <p><label for="glassval">preço Total: R$</label> <input type="text" name="utot" id="idtot" placeholder="Preço Total A Pagar" readonly></p>
+                </fieldset>
+                
+                <input type="image" name="enviar" src="imagens/botao-enviar.png">
+            </form>
+    </section>
+    <footer id="rodape">
+        <p>João Alves <br>
+        <a href="#">Sobre</a>
+        </p>
+    </footer>
+    </div>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Multimidia</title>
+</head>
+    <script src="js/funcoes.js"></script>
+<body>
+    <div id="interface">
+        <header id="cabecalho">
+            <hgroup>
+                <h1>Google Glass</h1>
+                <h2>A Revolução do Google Glass Está Chegando</h2>
+            </hgroup>
+            <figure>
+                <img id="poster" src="imagens/glass-oculos-preto-peq.png" alt="óculos Google">
+            </figure>
+
+            <!--Menu-->
+            <nav id="menu">
+                <h1>Menu Principal</h1>
+                <ul>
+                    <li onmouseover="mudaFoto('imagens/home.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="index.html">Home</a></li>
+                    <li onmouseover="mudaFoto('imagens/especificacoes.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="spesc.html">Especificações</a></li>
+                    <li onmouseover="mudaFoto('imagens/fotos.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+                    <li onmouseover="mudaFoto('imagens/multimidia.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="multimidia.html">Multimidia</a></li>
+                    <li onmouseover="mudaFoto('imagens/contato.png')" onmouseout="mudaFoto('imagens/multimidia.png')"><a href="fale_conosco.html">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="corpo2">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                    <h3>Glass > Multimídia</h3>
+                    <h1>Sons e Vídeos</h1>
+                    <h2>Por João Alves</h2>
+                    <h3 class="direita">Atualizado em 09/04/2023</h3>
+                </hgroup>
+                </header>
+
+                <div id="tv-radio">
+                    <audio  id="musica" controls>
+                        <source src="media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+                        <source src="media/2009-lovers-carvings-bibio.oggvorbis.ogg" type="audio/ogg">
+                    </audio>
+                    <video id="filme" controls poster="imagens/video-mini03.jpg">
+                        <source src="media/getting-started.mp4" type="video/mp4">
+                        <source src="media/getting-started.webm" type="video/webm">
+                        <p>Seu navegador não possui compatibilidade com vídeos</p>
+                    </video>
+
+                </div>
+        </section>  
+        <footer id="rodape">
+            <p>João Alves <br>
+            <a href="#">Sobre</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
