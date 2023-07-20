@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 atividade JS</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Converções de Strings e Number</h1>
+    <script>
+        //Converções
+
+        //String
+        var nome = window.prompt('Qual é o seu nome?');
+        document.write('<h2>Strings</h2>');
+        document.write(`<p>Olá, ${nome}! Seu nome tem ${nome.length} letras</p>`); //Quantidade de letras
+        document.write(`<p>Seu nome em maiusculas é ${nome.toUpperCase()}</p>`); //Todas letras Maiúsculas
+        document.write(`<p>Seu nome em minúsculas é ${nome.toLowerCase()}</p>`); //Todas letras Minúsculas
+        
+        //Number
+        var n1 = 1810;
+        document.write('<br><br><h2>Numbers</h2>');
+        document.write(`<p>${n1.toFixed(3)}</p>`); //3 casas Decimais
+        document.write(`${n1.toFixed(2).replace('.', ',')}`); //Troca o . por , 
+        document.write(`<p>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p>`); //Altera a exibição do número para moeda Real
+        document.write(`<p>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}</p>`); //Altera a exibição do número para moeda Dolar
+        document.write(`<p>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})}</p>`); //Altera a exibição do número para moeda Euro
+        document.write(`<p>${n1.toLocaleString('pt-BR', {style: 'currency', currency: 'JPY'})}</p>`); //Altera a exibição do número para moeda Ienes
+    </script>
+</body>
+</html>

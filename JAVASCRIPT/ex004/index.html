@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentos DOM</title>
+    <style>
+        div#area {
+            width: 500px;
+            height: 200px;
+
+            background-color: #62b3ff;
+            color: white;
+            font: normal 20pt Arial;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicou()" onmouseenter="enter()" onmouseout="scape()">
+        Interaja
+    </div>
+
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', enter)
+        a.addEventListener('mouseout', scape)
+
+        function clicou() {
+            a.innerText = 'Event DOM Click active!'
+            a.style.backgroundColor = 'green'
+            a.style.borderRadius = '20px'
+        }
+        function enter() {
+            a.innerText = 'MouseEnter active!'
+        }
+        function scape() {
+            a.innerText = 'MouseOut active!'
+            a.style.background = '#62b3ff'
+            a.style.borderRadius = '0px'
+        }
+    </script>
+</body>
+</html>

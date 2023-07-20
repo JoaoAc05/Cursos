@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+</head>
+<body>
+    <h1>Você Caiu Na Imigração</h1>
+    <label for="txtloc">De onde você é: </label><input type="text" id="txtloc">
+    <div id="res">
+        <p>Aqui aparecerá a validação</p>
+    </div>
+
+    <script>
+        var loc = window.document.querySelector('input#txtloc')
+        loc.addEventListener('input', locate)
+
+        function locate() {
+            var local = (loc.value)
+            var res = window.document.getElementById('res')
+
+            if (local == 'brasil' || local == 'Brasil') {
+                res.innerHTML = 'Brasileiro'
+            } else if( local == 'Estados Unidos' || local == 'estados unidos') {
+                res.innerHTML = 'Estadunidense'
+            } else if( local == 'Argentina' || local == 'argentina') {
+                res.innerHTML = 'Boludo Manito'
+            } else {
+                res.innerHTML = 'Estrangeiro'
+            }
+        }
+    </script>
+</body>
+</html>

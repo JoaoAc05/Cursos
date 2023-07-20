@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            color: white;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+<body>
+    <!-- Arvore DOM -->
+    <!-- Document Object Model -->
+    <!-- Window -->
+        <!-- Location -> URL-->
+        <!-- Document -> Arquivo atual -->
+            <!-- HTML -->
+                <!-- Head -->
+                    <!-- Title -->
+                    <!-- Meta -->
+                    <!-- ... -->
+                <!-- Body -->
+                    <!-- h1 -->
+                    <!-- p -->
+                    <!-- ... -->
+        <!-- Hitory -> De onde o usuario veio -->7
+    
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div>Clique em Mim</div>
+
+    <script>
+        var corpo = window.document.body
+        var paragrafo1 = window.document.getElementsByTagName('p')[1] // 0 = 1º / 1 = 2º
+        // Var -> o conteudo do 2º elemento p
+        document.write(paragrafo1.innerHTML + '<br>')
+        //no documento sera escrito o conteudo da variavel em html (pegando as formatações por tag)
+        document.write(paragrafo1.innerText)  //no documento sera escrito o conteudo da variavel em html (sem pegar as formatações por tag)
+
+        paragrafo1.style.color = 'red' //Altera o style do documento
+        corpo.style.backgroundColor = 'black'
+        
+        //seletores
+        document.getElementsByTagName() // Marca/Tag
+        document.getElementById() // Id
+        document.getElementsByName() // Nome
+        document.getElementsByClassName() // Classes
+        document.querySelector() // Seletor
+    </script>
+</body>
+</html>

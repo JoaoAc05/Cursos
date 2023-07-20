@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        input {
+            width: 100px;
+            height: 25px;
+            margin: 15px;
+            transition: 0.3s ease;
+
+            border: 1px solid #00000041;
+            box-shadow: 3px 3px 5px #00000038;
+            text-align: center;
+        }
+        input:hover {
+            transform: scale(1.05);
+        }
+        input[type=button]:hover{
+            cursor: pointer;
+        }
+
+        p#resultado {
+            width: 400px;
+            height: 30px;
+            margin: 0 15px;
+
+            border: 1px solid #00000041;
+            box-shadow: 5px 5px 10px #00000038;
+            text-align: center;
+        }
+    </style>
+</head> 
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txtn1" id="txtn1">
+    +
+    <input type="number" name="txtn2" id="txtn2">
+    <input type="button" value="Somar" id="somar" onclick="soma()">
+    <br><br>
+    <p id="resultado">Aqui ira aparecer o Resultado!</p>
+    <script>
+
+        function soma() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            var res = window.document.getElementById('resultado')
+            res.innerHTML = `A soma entre ${n1} e ${n2} resulta em <strong>${s}</strong>` 
+        }
+    </script>
+</body>
+</html>
