@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+body {
+    background-color: #e7d298;
+    font: normal 17pt Arial;
+}
+h1 {
+    text-align: center;
+}
+
+section {
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+    
+    background-color: #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #00000042;
+}
+input {
+    text-align: center;
+}
+
+div#res{
+    text-align: center;
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+}

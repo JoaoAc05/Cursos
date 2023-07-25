@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Construindo o site solo -->
+    <header>
+        <h1>Vamos Contar</h1>
+    </header>
+    <section>
+        <div>
+            <p></p><label for="start">Inicio: </label><input type="number" name="txtinicio" id="start"></p>
+            <p><label for="end">Final: </label><input type="number" name="fim" id="end"></p>
+            <p><label for="steps">Passos: </label><input type="number" name="passo" id="steps" min="1"></p>
+            <input type="button" value="Contar" onclick="clicou()">
+        </div>
+        <div id="res">
+            <p>Aqui será exibido o seu contador...</p>
+        </div>
+    </section>
+    <footer>&copy;By João Alves</footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

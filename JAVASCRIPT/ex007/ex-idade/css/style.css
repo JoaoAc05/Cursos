@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(77, 159, 253);
+    font-size: 16pt;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    width: 500px;
+    margin: auto;
+    padding: 15px;
+
+    background-color: white;
+    border-radius: 20px;
+}
+input {
+    margin-bottom: 10px;
+}
+
+div#scape{
+    text-align: center;
+}
+footer {
+    text-align: center;
+}

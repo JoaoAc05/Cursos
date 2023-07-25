@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: #6d00ac;
+    font: normal 17pt Arial;
+}
+h1 {
+    text-align: center;
+    color: white;
+}
+
+section {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #0000003f;
+}
+input {
+    text-align: center;
+    padding: 5px;
+}
+input[value = 'Gerar Tabuada']{
+    margin-left: 20px;
+    
+    cursor: pointer;
+}
+
+select {
+    margin-top: 30px;
+}
