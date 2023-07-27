@@ -18,18 +18,8 @@ section {
     box-shadow: 3px 3px 10px #0000004f;
 }
 
-input[type = number]{
-
-    text-align: center;
-}
-input[type = button] {
-    cursor: pointer;
-}
-
-select {
-    width: 200px;
-    text-align: center;
-    font: normal 13pt Arial;
+select#flista {
+    width: 150px;
 }
 
 footer {

@@ -4,7 +4,6 @@ adicionar.addEventListener('click', adiciona)
 finalizar.addEventListener('click', finaliza)
 
 let numeros = []
-let contador = 0
 let res = window.document.querySelector('div#res')
 
 function adiciona() {
@@ -25,7 +24,6 @@ function adiciona() {
             let item = document.createElement('option')
             item.text = `Valor ${valor} adicionado`
             tabela.appendChild(item)
-            contador++
             res.innerHTML = ""
         }
     }
@@ -36,19 +34,22 @@ function finaliza() {
     if ( numeros == 0){
         window.alert('Adicione algum valor antes')
     } else {
-        numeros.sort()
-        let menorNum = numeros[0]
+        numeros.sort() //Inútil
+        let menorNum = 100
         let maiorNum = 0
         let soma = 0
         for(let c = 0; c < numeros.length; c++){
             if (maiorNum < numeros[c]) {
                 maiorNum = numeros[c]
             }
+            if (menorNum > numeros[c]){
+                menorNum = numeros[c]
+            }
             soma += numeros[c]
         }
-        let media = soma/contador
+        let media = soma / numeros.length
 
-        res.innerHTML = `<p>A quantidade de números exibidos foi :${contador}</p>`
+        res.innerHTML = `<p>A quantidade de números exibidos foi: ${numeros.length}</p>`
         res.innerHTML += `<p>O maior número exibido foi: ${maiorNum}</p>`
         res.innerHTML += `<p>O menor número exibido foi: ${menorNum}</p>`
         res.innerHTML += `<p>A soma entre todos é: ${soma}</p>`
