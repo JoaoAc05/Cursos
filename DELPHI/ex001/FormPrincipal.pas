@@ -18,6 +18,10 @@ type
     Produtos1: TMenuItem;
     BIBIBI1: TMenuItem;
     SojaBIGHEAD1: TMenuItem;
+    Lanamentos1: TMenuItem;
+    NFe1: TMenuItem;
+    NFCe1: TMenuItem;
+    MDFe1: TMenuItem;
   private
     { Private declarations }
   public
